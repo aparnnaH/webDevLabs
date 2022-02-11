@@ -8,40 +8,41 @@
   </head>
   <body>
     <h1>Sudoko</h1>
-    <table id = "board">
+    <table class = "board">
       <tr> 
-        <td></td><td>1</td><td></td><td></td><td></td><td></td><td></td><td>9</td><td></td>
+        <td></td><td>1</td><td id = "border-r"></td><td></td><td></td><td id = "border-r"></td><td></td><td>9</td><td></td>
       </tr>
       <tr>
-        <td></td><td></td><td>4</td><td></td><td></td><td></td><td>2</td><td></td><td></td>
+        <td></td><td></td><td id = "border-r">4</td><td></td><td></td><td id = "border-r"></td><td>2</td><td></td><td></td>
+      </tr>
+      <tr id = "border-b">
+        <td></td><td></td><td id = "border-r">8</td><td></td><td></td><td id = "border-r">5</td><td></td><td></td><td></td>
       </tr>
       <tr>
-        <td></td><td></td><td>8</td><td></td><td></td><td>5</td><td></td><td></td><td></td>
+        <td></td><td></td><td id = "border-r"></td><td></td><td></td><td id = "border-r"></td><td></td><td>3</td><td></td>
       </tr>
       <tr>
-        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>3</td><td></td>
+        <td>2</td><td></td><td id = "border-r"></td><td></td><td>4</td><td id = "border-r"></td><td>1</td><td></td><td></td>
+      </tr>
+      <tr id = "border-b">
+        <td> </td><td></td><td id = "border-r"></td><td></td><td></td><td id = "border-r"></td><td></td><td></td><td></td>
       </tr>
       <tr>
-        <td>2</td><td></td><td></td><td></td><td>4</td><td></td><td>1</td><td></td><td></td>
+        <td></td><td></td><td id = "border-r">1</td><td>8</td><td></td><td id = "border-r"></td><td>6</td><td></td><td></td>
       </tr>
       <tr>
-        <td> </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td></td><td>3</td><td id = "border-r"></td><td></td><td></td><td id = "border-r"></td><td></td><td>8</td><td></td>
       </tr>
       <tr>
-        <td></td><td></td><td>1</td><td>8</td><td></td><td></td><td>6</td><td></td><td></td>
-      </tr>
-      <tr>
-        <td></td><td>3</td><td></td><td></td><td></td><td></td><td></td><td>8</td><td></td>
-      </tr>
-      <tr>
-        <td></td><td></td><td>6</td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td></td><td></td><td id = "border-r">6</td><td></td><td></td><td id = "border-r"></td><td></td><td></td><td></td>
       </tr>
     </table>
-
-    <table>
+   
+    <table class="board">
       <tr>
         <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td><img src="images/undo.png" alt="undo"></td>
       </tr>
     </table>
+
   </body>
 </html>
