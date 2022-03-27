@@ -12,31 +12,89 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
+  <script src="scripts/spreadsheet.js"></script>
     <table id="spreadsheet">
         <tr id="headers">
           <th>Student ID</th>
-          <th>Asmt 1</th>
-          <th>Asmt 2</th>
-          <th>Asmt 3</th>
+          <th onclick="selectColumn()">Asmt 1</th>
+          <th onclick="selectColumn()">Asmt 2</th>
+          <th onclick="selectColumn()">Asmt 3</th>
+          <th onclick="selectColumn()">Midterm</th>
+          <th onclick="selectColumn()">Final Exam</th>
         </tr>
         <tr>
-          <td id="headers">100000000</td>
-          <td>4.5</td>
-          <td>3.75</td>
-          <td>3.4</td>
+          <td id="headers" onclick="selectRow()">100000001</td>
+          <td contenteditable="true">92.0</td>
+          <td contenteditable="true">80.0</td>
+          <td contenteditable="true">100.0</td>
+          <td contenteditable="true">62.5</td>
+          <td contenteditable="true">81.5</td>
         </tr>
         <tr>
-          <td id="headers">100000001</td>
-          <td>4.25</td>
-          <td>4.12</td>
-          <td>4.25</td>
+          <td id="headers" onclick="selectRow()">100000002</td>
+          <td contenteditable="true">100.0</td>
+          <td contenteditable="true">85.5</td>
+          <td contenteditable="true">90.0</td>
+          <td contenteditable="true">75.0</td>
+          <td contenteditable="true">90.25</td>
         </tr>
         <tr>
-          <td id="headers">100000002</td>
-          <td>5.0</td>
-          <td>4.75</td>
-          <td>4.5</td>
+          <td id="headers" onclick="selectRow()">100000003</td>
+          <td contenteditable="true">80.0</td>
+          <td contenteditable="true">90.5</td>
+          <td contenteditable="true">90.0</td>
+          <td contenteditable="true">66.5</td>
+          <td contenteditable="true">68.0</td>
+        </tr>
+        <tr>
+          <td id="headers" onclick="selectRow()">100000004</td>
+          <td contenteditable="true">100.0</td>
+          <td contenteditable="true">100.0</td>
+          <td contenteditable="true">100.0</td>
+          <td contenteditable="true">98.0</td>
+          <td contenteditable="true">95.5</td>
+        </tr>
+        <tr>
+          <td id="headers" onclick="selectRow()">100000005</td>
+          <td contenteditable="true">100.0</td>
+          <td contenteditable="true">90.0</td>
+          <td contenteditable="true">100.0</td>
+          <td contenteditable="true">58.5</td>
+          <td contenteditable="true">72.0</td>
+        </tr>
+        <tr>
+          <td id="headers" onclick="selectRow()">100000006</td>
+          <td contenteditable="true">90.0</td>
+          <td contenteditable="true">81.5</td>
+          <td contenteditable="true">95.5</td>
+          <td contenteditable="true">65.5</td>
+          <td contenteditable="true">64.0</td>
+        </tr>
+        <tr>
+          <td id="headers" onclick="selectRow()">100000007</td>
+          <td contenteditable="true">40.5</td>
+          <td contenteditable="true">50.5</td>
+          <td contenteditable="true">65.5</td>
+          <td contenteditable="true">22.5</td>
+          <td contenteditable="true">51.0</td>
+        </tr>
+        <tr>
+          <td id="headers" onclick="selectRow()">100000008</td>
+          <td contenteditable="true">70.0</td>
+          <td contenteditable="true">75.0</td>
+          <td contenteditable="true">70.0</td>
+          <td contenteditable="true">55.5</td>
+          <td contenteditable="true">21.0</td>
+        </tr>
+        <tr>
+          <td id="headers" onclick="selectRow()">100000009</td>
+          <td contenteditable="true">80.0</td>
+          <td contenteditable="true">82.5</td>
+          <td contenteditable="true">65.0</td>
+          <td contenteditable="true">73.5</td>
+          <td contenteditable="true">88.0</td>
         </tr>
       </table>
+      <div id="container" style="width: 100%; height: 100%"></div>
 </body>
 </html>
